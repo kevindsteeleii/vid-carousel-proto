@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier \"src/**/*.{js,html,jsx,ts,tsx}\"",
+    "lint": "eslint  \"src/**/*.{js,jsx,ts,tsx}\" --quiet",
+    "dev": "parcel -p 3000 watch \"src/index.html\""
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,18 @@
   "bugs": {
     "url": "https://github.com/kevindsteeleii/vid-carousel-proto/issues"
   },
-  "homepage": "https://github.com/kevindsteeleii/vid-carousel-proto#readme"
+  "homepage": "https://github.com/kevindsteeleii/vid-carousel-proto#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.17",
+    "@babel/preset-env": "^7.12.17",
+    "@babel/preset-react": "^7.12.13",
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^7.2.0",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }

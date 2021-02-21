@@ -1,0 +1,14 @@
+@import "./_normalize.scss";
+
+html,
+:root {
+}
+
+html {
+  height: 100vh;
+  position: relative;
+
+  body {
+    height: inherit;
+  }
+}
