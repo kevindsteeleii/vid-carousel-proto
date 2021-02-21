@@ -2,11 +2,15 @@
   "name": "vid-carousel-proto",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "format": "prettier \"src/**/*.{js,html,jsx,ts,tsx}\"",
+    "test": "jest --config ./jest.config.json",
+    "test:watch": "npm run test -- --watch",
     "lint": "eslint  \"src/**/*.{js,jsx,ts,tsx}\" --quiet",
-    "dev": "parcel -p 3000 watch \"src/index.html\""
+    "clean": "rimraf \"dist/*\"",
+    "dev": "rimraf \"dist/*\" && parcel -p 3000 watch \"src/index.html\"",
+    "build": "rimraf \"dist/*\" && parcel build \"src/index.html\""
   },
   "repository": {
     "type": "git",
@@ -21,15 +25,37 @@
   "homepage": "https://github.com/kevindsteeleii/vid-carousel-proto#readme",
   "devDependencies": {
     "@babel/core": "^7.12.17",
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
+    "@babel/plugin-transform-modules-commonjs": "^7.12.13",
     "@babel/preset-env": "^7.12.17",
     "@babel/preset-react": "^7.12.13",
+    "@testing-library/react": "^11.2.5",
+    "babel-preset-es2015": "^6.24.1",
+    "cssnano": "^4.1.10",
     "eslint": "^7.20.0",
     "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
     "prettier": "^2.2.1",
+    "react-test-renderer": "^17.0.1",
     "sass": "^1.32.8"
   },
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
-  }
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 ChromeAndroid versions",
+    "last 2 Firefox versions",
+    "last 2 FirefoxAndroid versions",
+    "last 2 Safari versions",
+    "last 2 iOS versions",
+    "last 2 Edge versions",
+    "last 2 Opera versions",
+    "last 2 OperaMobile versions"
+  ]
 }

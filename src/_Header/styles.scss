@@ -1,0 +1,15 @@
+.project-header {
+  background-color: #d23e3e;
+  height: 75px;
+  width: 100%;
+  position: relative;
+
+  h1 {
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
