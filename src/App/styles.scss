@@ -1,7 +1,31 @@
 html,
 :root {
-  color: #212529;
+  // VARS dimensions
+  --header-height: 50px;
+  --footer-height: 75px;
+  --main-width: 75vw;
+  --main-width-mb: calc(100vw - 40px);
+  --main-max-width: 1200px;
+  --carousel-height: 200px;
+
+  // VARS breakpoints
+
+  // VARS colors
+  --white: #fafafa;
+  --off-white: #f1f8ff;
+  // --header-bg: #c7d9eb;
+  --header-bg: #13395f;
+  --footer-bg: #13395f;
+  --black: rgb(26, 46, 59);
+
   font-family: "Montserrat", sans-serif;
+  // color: #212529;
+  color: var(--black);
+  background-color: var(--off-white);
+
+  * {
+    margin: 0;
+  }
 }
 
 html {
@@ -17,4 +41,5 @@ html {
   position: relative;
   margin: 0;
   padding: 0;
+  height: 100%;
 }

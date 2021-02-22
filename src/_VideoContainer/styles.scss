@@ -1,0 +1,9 @@
+#video-container {
+  background-color: #d23e3e;
+  // height: 50px;
+  width: 100%;
+  // height: 100%;
+  height: calc(100% - 100px);
+  border-radius: 2em;
+  overflow: hidden;
+}

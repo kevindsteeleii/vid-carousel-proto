@@ -1,0 +1,32 @@
+.footer-container {
+  // background-color: #d23e3e;
+  background-color: var(--footer-bg);
+  height: var(--footer-height);
+  width: 100%;
+  position: relative;
+
+  .footer-credits-me {
+    color: white;
+    line-height: 1em;
+    position: absolute;
+    right: 75px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    a {
+      color: inherit;
+    }
+  }
+
+  .footer-icon--heart-wrapper {
+    position: relative;
+  }
+
+  .footer-credits--heart {
+    position: absolute;
+    width: 26px;
+    fill: red;
+    top: -4px;
+    left: 0;
+  }
+}

@@ -1,0 +1,11 @@
+.video-theatre-container {
+  background-color: green;
+  // height: calc(
+  //   calc(0.5625 * var(--main-width)) - var(--header-height) -
+  //     var(--footer-height)
+  // );
+  height: calc(
+    100% - var(--header-height) - var(--footer-height) - var(--footer-height)
+  );
+  width: 100%;
+}

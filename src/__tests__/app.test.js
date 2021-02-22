@@ -22,7 +22,10 @@ test("Header's textContent is equal to: 'Video Carousel w/ Info'", async () => {
   expect(maybeHeader.textContent).toEqual("Video Carousel w/ Info");
 });
 
-test("getTotalThumbs f(n) works...", async () => {});
+// test("getTotalThumbs f(n) works...", async () => {
+//   const { getByTestId } = render(<Header />);
+
+// });
 
 afterEach(() => {
   cleanup();

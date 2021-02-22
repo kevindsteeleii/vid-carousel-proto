@@ -8,13 +8,15 @@ class MainBody extends React.Component {
   }
   render() {
     return (
-      <main className="app--main-body" data-testid="main-body-test-id"></main>
+      <main className="app--main-body" data-testid="main-body-test-id">
+        {this.props.children}
+      </main>
     );
   }
 }
 
-// MainBody.propTypes = {
-//   children: PropTypes.node.isRequired,
-// };
+MainBody.propTypes = {
+  children: PropTypes.element,
+};
 
 export default MainBody;

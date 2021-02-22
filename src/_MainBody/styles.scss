@@ -1,5 +1,18 @@
-.template-unchanged {
-  background-color: #d23e3e;
-  height: 50px;
-  width: 100%;
+.app--main-body {
+  // background-color: rgb(197, 197, 197);
+  // min-height: calc(100% - 175px);
+  height: calc(
+    calc(100% - var(--header-height)) - var(--footer-height)
+  ); // TODO find postCSS workaround for using traditional CSS variables for SASS, no importing in parcel, files are treated as individuals
+  // width: var(--main-width);
+  // max-width: var(--main-max-width);
+  width: var(--main-max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 1200px) {
+    width: calc(100vw - 40px);
+  }
 }
